@@ -2,13 +2,21 @@ import React from "react";
 
 import styles from "./taskApp.module.css";
 
+
+import AddTask from "../components/AddTask/AddTask"
+import TaskHeader from "../components/TaskHeader/TaskHeader"
+import Tasks from "../components/Tasks/Tasks"
+
 const TaskApp = () => {
   // NOTE: do not delete `data-cy` key value pair
   return (
-    <div data-cy="task-app" className={styles.taskApp}>
+    <div data-cy="task-app" className={styles.taskApp} >
       {/* Header */}
       {/* Add Task */}
       {/* Tasks */}
+      <TaskHeader/>
+      <AddTask/>
+      <Tasks/>
     </div>
   );
 };
